@@ -9,10 +9,6 @@ terraform {
 
 provider "azurerm" {
   # Configuration options please provide your data to authenticate with Azure 
-  subscription_id = "<your data here>"
-   tenant_id= "<your data here>"
-   client_id = "<your data here>"
-   client_secret = "<your data here>"
   features {
   }
 }
