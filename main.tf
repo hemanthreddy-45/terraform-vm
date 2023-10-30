@@ -39,7 +39,7 @@ resource "azurerm_subnet" "snet_opsera_int_1" {
 resource "azurerm_network_interface" "nic_01" {
     name = var.nic_name
     location = azurerm_resource_group.rg_spoke.location
-    resource_group_name = azurerm_resource_group.rg_spoke.id
+    resource_group_name = azurerm_resource_group.rg_spoke.name
 
     ip_configuration {
       name = "internal"
